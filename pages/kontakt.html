@@ -9,11 +9,66 @@
         <p>
             Slå en signal!
         </p>
+        
+<!-- Navigationsmeny enligt uppgift 1.5 -->
+
          <ul>
             <li><a href="../index.html">Start</a></li>
             <li><a href="laborationer.html">Laborationer</a></li>
             <li><a href="presentation.html">Presentation</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
+        
+<!-- Kontaktformulär enligt uppgift 1.9 -->
+        
+        <form id="kontaktamig" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+            <fieldset>
+                <legend>Vem du är</legend>
+                <p>
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
+                <p>
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required/>
+                </p>
+                <p>
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+                <p>
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" name="url" />
+                </p>
+                <p>
+                    Kontakta mig helst via:
+                </p>
+                <p>
+                   <label for="contactbymail">Mail</label>
+                   <input type="radio" id="contactbymail" name="contactby" value="mail" />
+                   <label for="contactbyphone">Telefon</label>
+                   <input type="radio" id="contactbyphone" name="contactby" value="telefon" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Vad du vill</legend>
+                <p>
+                    <label for="purpose">Ärende:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="question">Fråga</option>
+                        <option value="coop">Samarbetsförslag</option>
+                        <option value="business">Köp av tjänster</option>
+                        <option value="other">Övrigt</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" rows="5" cols="50" required></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Skicka" />   
+            </p>
+        </form>
     </body>
 </html>
